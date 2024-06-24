@@ -1,8 +1,6 @@
-<html >
-    <head>
-    <?php
-    function cuenta ($numero,$repe){
-        for ($x = 0; $x <= $numero;$x = $x + $repe ) {
+<?php
+    function cuentaNumeros ($numero = 10,$repe){
+        for ($x = 0; $x <= $numero;$x += $repe ) {
         if ($numero == 0 ){
             $numero = 10;
             echo $x . "<br/>";
@@ -15,10 +13,8 @@
         }
         }
     }
-    cuenta(20,2);
-    cuenta(0,1);
-    cuenta(12,0);
+    cuentaNumeros(20,2);
+    cuentaNumeros(0,1);
+    cuentaNumeros(12,0);
     
 ?>
-    <head>
-<html>
